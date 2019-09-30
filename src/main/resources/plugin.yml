@@ -1,0 +1,4 @@
+name: "BoatCore"
+main: com.github.sarhatabaot.boatcore.BoatCore
+version: @version@
+api-version: "1.14"
