@@ -25,6 +25,10 @@ repositories {
         name = 'aikar-repo'
         url = "https://repo.aikar.co/content/groups/aikar/"
     }
+    maven {
+        name = 'bstats'
+        url = 'https://repo.codemc.org/repository/maven-public'
+    }
     maven { url 'https://jitpack.io' }
 }
 
@@ -34,9 +38,11 @@ dependencies {
     compile "co.aikar:acf-paper:0.5.0-SNAPSHOT"
     compile 'com.github.sarhatabaot:JNBT:2.0.5'
     compile 'fr.minuskube.inv:smart-invs:1.2.7'
+    compile 'org.bstats:bstats-bukkit:1.5'
 }
 
 shadowJar {
+    relocate 'org.bstats', 'com.github.sarhatabaot.boatcore.bstats'
     relocate 'fr.minuskube.inv','com.github.sarhatabaot.boatcore.smartinvs'
     relocate 'org.jnbt', 'com.github.sarhatabaot.boatcore.jnbt'
     relocate 'co.aikar.commands', 'com.github.sarhatabaot.boatcore.acf'
