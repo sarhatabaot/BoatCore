@@ -1,6 +1,7 @@
 package com.github.sarhatabaot.boatcore.api.common;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 
 public class Common {
