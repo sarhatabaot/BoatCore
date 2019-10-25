@@ -32,7 +32,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly 'com.destroystokyo.paper:paper-api:1.14.4-R0.1-SNAPSHOT'
     compile "co.aikar:acf-paper:0.5.0-SNAPSHOT"
-    compile 'org.jnbt:JNBT:2.0.5'
+    compile 'com.github.sarhatabaot:JNBT:2.0.5'
     compile 'fr.minuskube.inv:smart-invs:1.2.7'
 }
 
