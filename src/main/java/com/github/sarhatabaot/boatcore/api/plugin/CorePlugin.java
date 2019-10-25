@@ -2,6 +2,7 @@ package com.github.sarhatabaot.boatcore.api.plugin;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -22,6 +23,7 @@ public abstract class CorePlugin extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		setInstance(this);
+		new Metrics(this);
 		beforeEnable();
 	}
 
