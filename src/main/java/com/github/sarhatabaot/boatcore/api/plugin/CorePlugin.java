@@ -8,6 +8,9 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author sarhatabaot
  */
 public abstract class CorePlugin extends JavaPlugin {
+	public static String NAME = getInstance().getDescription().getName();
+	public static String VERSION = getInstance().getDescription().getVersion();
+	public static String WEBSITE = getInstance().getDescription().getWebsite();
 	@Getter @Setter
 	private static CorePlugin instance;
 
