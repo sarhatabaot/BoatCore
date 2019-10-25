@@ -2,7 +2,6 @@ package com.github.sarhatabaot.boatcore.api.config;
 
 import com.github.sarhatabaot.boatcore.api.common.CustomColors;
 import com.github.sarhatabaot.boatcore.api.plugin.CorePlugin;
-import jdk.internal.joptsimple.internal.Strings;
 import lombok.Getter;
 import org.bukkit.Color;
 import org.bukkit.configuration.file.FileConfiguration;
