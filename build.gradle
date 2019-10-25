@@ -32,10 +32,12 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly 'com.destroystokyo.paper:paper-api:1.14.4-R0.1-SNAPSHOT'
     compile "co.aikar:acf-paper:0.5.0-SNAPSHOT"
-    compile 'com.github.sarhatabaot:JNBT:2.0.5'
+    compile 'org.jnbt:JNBT:2.0.5'
+    compile 'fr.minuskube.inv:smart-invs:1.2.7'
 }
 
 shadowJar {
+    relocate 'fr.minuskube.inv','com.github.sarhatabaot.boatcore.smartinvs'
     relocate 'org.jnbt', 'com.github.sarhatabaot.boatcore.jnbt'
     relocate 'co.aikar.commands', 'com.github.sarhatabaot.boatcore.acf'
 }
